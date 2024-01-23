@@ -17,9 +17,9 @@ void setup() {
 }
 
 void loop() {
-  value= analogRead(lm35pin); // A0'dan gelen analog değerini okuyacak
-  value= (value/1023)*5000; //analog değerini mV'ye dönüştürecek
-  Temperature= value/10; //mV'yi Celcius'a dönüştürecek
+  value= analogRead(lm35pin);
+  value= (value/1023)*5000;
+  Temperature= value/10; 
   myOLED.setFont(SmallFont);
   myOLED.print("SICAKLIK^C",25,10);
   myOLED.setFont(MediumNumbers);
